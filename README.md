@@ -65,7 +65,7 @@ The system consists of three main components running in separate execution conte
   - **Mock AI Provider** (`@Order(3)`): Deterministic, rule-based keyword & sentiment analyzer used when no external API keys are configured or when upstream LLM APIs fail (quota limit, network error, rate limit).
 - Ensures the entire system remains 100% functional out-of-the-box without requiring an active paid subscription key.
 
-### 3. `frontend` (Port 3000 / 5173)
+### 3. `frontend` (Port 3000)
 - Modern Single Page Application (SPA) built with React 18, Vite, and Tailwind CSS.
 - Optimized bundle splitting with Rollup `manualChunks` (vendor & icon chunks).
 - Features dual view modes:
