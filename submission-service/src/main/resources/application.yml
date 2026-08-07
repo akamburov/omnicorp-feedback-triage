@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: submission-service
+
+ai:
+  service:
+    url: ${AI_SERVICE_URL:http://localhost:8081/api/v1/triage}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
