@@ -18,7 +18,7 @@ This document records the interaction log with the AI Coding Assistant (Pi Agent
 > create plan for implementing omnicorp-feedback-triage
 
 **AI Response Summary:**
-- Analyzed `prescreen-brief-aleksandar-kamburov.md`.
+- Analyzed `prescreen-brief.md`.
 - Proposed a multi-service monorepo structure:
   1. `submission-service` (Java 17 / Spring Boot, Port 8080)
   2. `ai-processing-service` (Java 17 / Spring Boot, Port 8081)

@@ -230,4 +230,5 @@ In accordance with the project guidelines, AI assistance was utilized during arc
   - Converted DTOs and API payloads to Java 17 `record`s with Jackson `@JsonProperty` annotations.
   - Hardening Docker containers (`appuser` unprivileged user) and Nginx proxy headers.
   - Authoring project documentation, `.gitignore` rules, and comprehensive conversation logs.
-- **Full Conversation Log**: See [`ai-chat-log.md`](./ai-chat-log.md) committed in the root directory.
+- **Conversation Log Report**: See [`ai-chat-log.md`](./ai-chat-log.md) committed in the root directory.
+- **Full Conversation Log Export**: See [`session-1-implementation.html`](./session-1-implementation.html) and [`session-2-refactoring.html`](./session-2-refactoring.html) committed in the root directory.
