@@ -156,7 +156,7 @@ Run all three services with a single command:
 ```bash
 # Clone the repository
 git clone <your-repository-url>
-cd EPAM-Prescreen
+cd omnicorp-feedback-triage
 
 # Option A: Run in Mock Fallback Mode (No API keys needed)
 docker compose up --build

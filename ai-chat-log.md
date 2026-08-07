@@ -15,7 +15,7 @@ This document records the interaction log with the AI Coding Assistant (Pi Agent
 
 ### Entry 1: Prescreen Requirements Analysis & Architecture Proposal
 **User Prompt:**
-> create plan for implementing C:\Users\akamburov\Projects\EPAM-Prescreen
+> create plan for implementing omnicorp-feedback-triage
 
 **AI Response Summary:**
 - Analyzed `prescreen-brief-aleksandar-kamburov.md`.
