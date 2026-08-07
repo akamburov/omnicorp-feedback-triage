@@ -222,7 +222,6 @@ npm run dev
 ## 📊 Development Metrics & Key Observations
 
 - **Development Effort & Cost**: The entire solution was designed and implemented in approximately **4 hours** (18:00–02:00) using an **AI-first engineering approach**, costing **~$5** in total compute/API utilization.
-- **LLM Provider Insights**: The Google Gemini API (`gemini-3.5-flash-lite`) proved to be significantly more configurable than the OpenAI API (`gpt-4o-mini`), offering richer controls for system instructions, schema enforcement, and safety parameters.
 
 ---
 
@@ -241,6 +240,7 @@ npm run dev
 - **Shared Model/DTO Module**: Extract duplicated enums (`FeedbackCategory`, `FeedbackPriority`, `Sentiment`) and DTOs (`ErrorResponse`, `TriageResponse`) into a shared Maven module (`common-models`).
 - **Constant Management**: Centralize static strings (prompt templates, HTTP headers, API keys) into dedicated constant classes or Spring `@ConfigurationProperties`.
 - **UI Accessibility**: Add missing `for` / `htmlFor` attributes on HTML `<label>` elements across frontend React components for full accessibility compliance.
+- **LLM Providers**: The Google Gemini API implementation is more configurable than the OpenAI API. Duplicated code can be extracted into a shared classes.
 
 ---
 
