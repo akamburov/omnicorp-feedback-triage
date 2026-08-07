@@ -219,6 +219,31 @@ npm run dev
 
 ---
 
+## 📊 Development Metrics & Key Observations
+
+- **Development Effort & Cost**: The entire solution was designed and implemented in approximately **4 hours** (18:00–02:00) using an **AI-first engineering approach**, costing **~$5** in total compute/API utilization.
+- **LLM Provider Insights**: The Google Gemini API (`gemini-3.5-flash-lite`) proved to be significantly more configurable than the OpenAI API (`gpt-4o-mini`), offering richer controls for system instructions, schema enforcement, and safety parameters.
+
+---
+
+## 🔮 Production Roadmap & Technical Debt
+
+### 1. Data Persistence & Lifecycle Management
+- **Database Migration**: Replace the current thread-safe in-memory store with relational persistence (e.g., PostgreSQL or MySQL via Spring Data JPA / Liquibase).
+- **Ticket Archival**: Implement ticket archiving support (`ARCHIVED` status) when persistent storage is added, allowing HR managers to mark tickets as archived and keep active queries performant.
+
+### 2. Automated Testing Suite
+- Currently, there is no automated testing framework or test suite in place.
+- **Backend Testing**: Add unit and integration test coverage using JUnit 5, Mockito, `@SpringBootTest`, and Testcontainers for inter-service HTTP testing.
+- **Frontend Testing**: Introduce unit/component tests using Vitest and React Testing Library, alongside E2E test suites with Cypress or Playwright.
+
+### 3. Code Optimization Backlog
+- **Shared Model/DTO Module**: Extract duplicated enums (`FeedbackCategory`, `FeedbackPriority`, `Sentiment`) and DTOs (`ErrorResponse`, `TriageResponse`) into a shared Maven module (`common-models`).
+- **Constant Management**: Centralize static strings (prompt templates, HTTP headers, API keys) into dedicated constant classes or Spring `@ConfigurationProperties`.
+- **UI Accessibility**: Add missing `for` / `htmlFor` attributes on HTML `<label>` elements across frontend React components for full accessibility compliance.
+
+---
+
 ## 🤖 AI Assistant Disclosure & Conversation Logs
 
 In accordance with the project guidelines, AI assistance was utilized during architecture planning, code refactoring, security hardening, and documentation.
